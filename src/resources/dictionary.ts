@@ -290,6 +290,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'roger',
+    name: "Roger's Words",
+    description: '学习、工作常用英语',
+    category: '中国考试',
+    tags: ['课外词汇'],
+    url: '/dicts/RogersWords.json',
+    length: 4174,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'coca_20000',
     name: 'COCA20000词',
     description: 'COCA20000词',
@@ -565,17 +576,6 @@ const chinaExam: DictionaryResource[] = [
     tags: ['其他'],
     url: '/dicts/frequently_used_word03.json',
     length: 1435,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'roger',
-    name: "Roger's Words",
-    description: '学习、工作常用英语',
-    category: '英语词典',
-    tags: ['课外词汇'],
-    url: '/dicts/RogersWords.json',
-    length: 4174,
     language: 'en',
     languageCategory: 'en',
   },
@@ -4106,32 +4106,13 @@ const indonesianDicts: DictionaryResource[] = [
  */
 export const dictionaryResources: DictionaryResource[] = [
   ...chinaExam,
-  ...internationalExam,
   ...childrenEnglish,
+  ...internationalExam,
   ...programming,
   ...japaneseExam,
   ...germanExam,
-  ...kazakhHapinDicts,
-  ...indonesianDicts,
-
-  // {
-  //   id: 'zhtest',
-  //   name: '中文测试',
-  //   description: '中文测试词库',
-  //   category: '测试',
-  //   url: '/dicts/chinese_test.json',
-  //   length: 27,
-  //   language: 'zh',
-  // },
-  // {
-  //   id: 'jptest',
-  //   name: '日文测试',
-  //   description: '日文测试词库',
-  //   category: '测试',
-  //   url: '/dicts/japanese_test.json',
-  //   length: 20,
-  //   language: 'ja',
-  // },
+  // ...kazakhHapinDicts,
+  // ...indonesianDicts,
 ]
 
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
